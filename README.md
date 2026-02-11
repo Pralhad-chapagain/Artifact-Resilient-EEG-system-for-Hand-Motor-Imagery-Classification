@@ -10,10 +10,11 @@ The program structure:
 2. Preprocessing
 3. Quality Check
 4. Visualization
+5. Feature Extraction
 
    Dataset are directly loaded from the mne and selected first 5 subject among 109 for computational constraint and generalization. Each subject has 14 different run, among them 4,8 and 12 are for motor imagery left and right hand movement so these 3 runs are choosen.
    In preprocessing, First checks for the Missingness, High amplitude artifacts, EMG artifacts, Outlier, Duplicates and class imbalance and after that try to resolve these issues.
-   Before and After preprocessing results are plotted for the qua;ity check and visulization.
+   Before and After preprocessing results are plotted for the quality check and visulization. After Preprocessing, Feature extraction is done to calculate the important temporal, spectral and spatial features. 
 
 This project uses:
 1. Python 3.12.7
